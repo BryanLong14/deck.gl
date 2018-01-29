@@ -8,6 +8,12 @@ WebGL2 feature: smooth attribute transition performed on GPU. Use the new `trans
 
 * Layer class constructors can now take multiple property objects. The property objects will be merged, with later objects taking precedence over earlier objects: `new Layer({prop1: ...}, {prop2: ...});`
 
+## Experimental Features
+
+### Prop Types
+
+It is now possible to provide additional type information when declaring the `defaultProps` object for deck.gl layers, and deck.gl layers will automatically try to deduce type information based on the default value for any properties that lack type information. Prop types can be used to validate property values during development, and are also a foundation for planned features such as property transitions/animations and asynchronous properties.
+
 
 # deck.gl v5
 
